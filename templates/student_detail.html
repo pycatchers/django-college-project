@@ -15,5 +15,8 @@
         <p>Joining Date: {{ student.joined_date }}</p>
     </li>
   </ul>
+
+    <button><a href="{% url 'student_delete' student.pk %}">Delete Student</a></button>
+
 </body>
 </html>
