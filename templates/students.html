@@ -5,11 +5,13 @@
     <title>All Students</title>
 </head>
 <body>
-    <a href="{% url 'student_create' %}">Create Student</a>
     <ul>
         {% for student in student_list %}
             <a href="{% url 'student_detail' student.pk %}"> <li>{{student.name}}</li> </a>
         {% endfor%}
     </ul>
+
+    <button><a href="{% url 'student_create' %}">Create Student</a></button>
+
 </body>
 </html>
